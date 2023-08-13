@@ -4,5 +4,5 @@ export interface IButton {
     background?: string,
     hasIcon?: boolean,
     icon?: string,
-    iconPostion: 'left' | 'right'
+    iconPostion?: 'left' | 'right'
 }

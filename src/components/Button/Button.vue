@@ -20,7 +20,7 @@ const props = withDefaults(defineProps<IButton>(), {
 })
 
 const classes = computed(() => {
-    return [props.background, props.color]
+    return [props.background]
 })
 
 const styles = computed(() => ({

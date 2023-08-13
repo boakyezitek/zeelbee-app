@@ -26,6 +26,8 @@ export default {
         'zeel-orange-gradient': 'rgba(250, 129, 0, 0.15), rgba(250, 129, 0, 0.06)',
         'zeel-dark-300' : '#8D9AB2',
         'zeel-dark-500': '#3C475D',
+        'zeel-gray-50': 'rgba(212, 212, 212, 1)',
+        'zeel-gray-100': 'rgba(34, 34, 34, 0.3)',
         'zeel-gray-200': 'rgba(0, 0, 0, 0.07)',
         'zeel-gray-300' : '#F3F5F6',
         'zeel-gray-400' : '#D3D8E0',
@@ -34,6 +36,26 @@ export default {
       borderRadius: {
         'zeel-rounded': '10px',
         'zeel-rounded-lg' : '12px'
+      },
+      fontSize: {
+        'zeel-text-small': '15px',
+        'zeel-text-meduim': '18px',
+        'zeel-text-large' : '24px',
+        'zeel-text-extra-large': '42px'
+      },
+      animation:{
+        'fade-in-up': 'fadeInUp 500ms 1',
+        'fade-out-down': 'fadeOutDown 500ms 1'
+      },
+      keyframes: {
+        fadeInUp: {
+          from: { opacity: 0, transform: "translate3d(0, 100%, 0)" },
+          to: { opacity: 1, transform: "translate3d(0, 0, 0)" }
+        },
+        fadeOutDown: {
+          from: { opacity: 1 },
+          to: { opacity: 0, transform: "translate3d(0, 100%, 0)" }
+        }
       }
     },
   },

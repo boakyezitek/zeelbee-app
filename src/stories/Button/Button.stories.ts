@@ -3,8 +3,9 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import Button from '../../components/Button/Button.vue';
 
 const meta = {
-    title: 'ZellBee/Button',
+    title: 'Zeelbee/Component/Button',
     component: Button,
+    tags: ['autodocs'],
 }satisfies Meta<typeof Button>;
 
 export default meta;
