@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'zeel-default-font': ['Poppins', 'sans-serif'],
-        'zeel-regular-font': ['Montserrat', 'sans-serif'],
+        'zeel-default': ['Poppins', 'sans-serif'],
+        'zeel-regular': ['Montserrat', 'sans-serif'],
       },
       colors: {
         'zeel-green-100': 'rgba(0, 143, 95, 0.12)',
@@ -32,7 +32,8 @@ export default {
         'zeel-gray-500': '#ECEFF3',
       },
       borderRadius: {
-        'zeel-rounded': '12px'
+        'zeel-rounded': '10px',
+        'zeel-rounded-lg' : '12px'
       }
     },
   },
