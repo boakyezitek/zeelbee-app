@@ -16,6 +16,7 @@ export default {
         'zeel-green-400' : '#008F5F',
         'zeel-green-600': '#005236',
         'zeel-primary' : '#2D9CDB',
+        'zeel-info' : '#435EBE',
         'zeel-secondary': '#E1E4EA',
         'zeel-danger': '#FC5C65',
         'zeel-warning': '#FFBE0A',

@@ -1,0 +1,55 @@
+import { Meta, ColorItem, ColorPalette} from "@storybook/blocks";
+
+<Meta title="Overview" />
+
+# ZeelBee Component Overview
+---
+### Color Palette
+This color palette is configure in the tailwind.config.js file. These colors is set as utilities to be used in tailwind css. 
+<ColorPalette>
+  <ColorItem
+    title="Default Colors"
+    subtitle="This is the list of colors for primary, secondary, warning and danger"
+    colors={{ 'zeel-primary': '#2D9CDB', 'zeel-info': '#435EBE', 'zeel-secondary': '#E1E4EA', 
+    'zeel-warning': '#FFBE0A', 'zeel-danger': '#FC5C65' }}
+  />
+  <ColorItem
+    title="Zeel Green Palette"
+    subtitle="This is the list of colors for green"
+    colors={{ 'zeel-green-100': 'rgba(0, 143, 95, 0.12)', 'zeel-green-200': 'rgba(0, 143, 95, 0.30)', 
+    'zeel-green-400': '#008F5F', 'zeel-green-600': '#005236' }}
+  />
+    <ColorItem
+    title="Zeel Orange Palette"
+    subtitle="This is the list of colors for orange"
+    colors={{ 'zeel-orange-200': '#FFF3E5', 'zeel-orange-300': '#FFCE99', 
+    'zeel-orange-500': '#FA8100', 'zeel-orange-gradient': 'rgba(250, 129, 0, 0.15)', 'zeel-orange-gradient' : 'rgba(250, 129, 0, 0.06)' }}
+  />
+
+   <ColorItem
+    title="Zeel Gray Palette"
+    subtitle="This is the list of colors for gray"
+    colors={{ 'zeel-gray-200': 'rgba(0, 0, 0, 0.07)', 'zeel-gray-300': '#F3F5F6', 
+    'zeel-gray-400': '#D3D8E0', 'zeel-green-500': '#ECEFF3' }}
+  />
+
+    <ColorItem
+    title="Zeel Dark Palette"
+    subtitle="This is the list of colors for dark"
+    colors={{ 'zeel-dark-300': '#8D9AB2', 'zeel-dark-500': '#3C475D' }}
+  />
+
+</ColorPalette>
+
+---
+
+### Typography
+Font Family: We uses Poppins and Montserrat.
+
+#### Poppins:
+This is use in the app as the main Typography to handle p, span, b, a tags. This set in tailwind as 'zeel-default-font'.
+
+#### Montserrat:
+This is use in the app as the main Typography to handle heading tags. h1, h2, h3, h4 and h5. This set in tailwind as 'zeel-regular-font'.
+
+---
