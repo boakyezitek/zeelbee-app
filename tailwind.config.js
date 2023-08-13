@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'zeel-default-font': ['Poppins', 'sans-serif'],
-        'zeel-regular-font': ['Montserrat', 'sans-serif'],
+        'zeel-default': ['Poppins', 'sans-serif'],
+        'zeel-regular': ['Montserrat', 'sans-serif'],
       },
       colors: {
         'zeel-green-100': 'rgba(0, 143, 95, 0.12)',
@@ -16,6 +16,7 @@ export default {
         'zeel-green-400' : '#008F5F',
         'zeel-green-600': '#005236',
         'zeel-primary' : '#2D9CDB',
+        'zeel-info' : '#435EBE',
         'zeel-secondary': '#E1E4EA',
         'zeel-danger': '#FC5C65',
         'zeel-warning': '#FFBE0A',
@@ -25,13 +26,36 @@ export default {
         'zeel-orange-gradient': 'rgba(250, 129, 0, 0.15), rgba(250, 129, 0, 0.06)',
         'zeel-dark-300' : '#8D9AB2',
         'zeel-dark-500': '#3C475D',
+        'zeel-gray-50': 'rgba(212, 212, 212, 1)',
+        'zeel-gray-100': 'rgba(34, 34, 34, 0.3)',
         'zeel-gray-200': 'rgba(0, 0, 0, 0.07)',
         'zeel-gray-300' : '#F3F5F6',
         'zeel-gray-400' : '#D3D8E0',
         'zeel-gray-500': '#ECEFF3',
       },
       borderRadius: {
-        'zeel-rounded': '12px'
+        'zeel-rounded': '10px',
+        'zeel-rounded-lg' : '12px'
+      },
+      fontSize: {
+        'zeel-text-small': '15px',
+        'zeel-text-meduim': '18px',
+        'zeel-text-large' : '24px',
+        'zeel-text-extra-large': '42px'
+      },
+      animation:{
+        'fade-in-up': 'fadeInUp 500ms 1',
+        'fade-out-down': 'fadeOutDown 500ms 1'
+      },
+      keyframes: {
+        fadeInUp: {
+          from: { opacity: 0, transform: "translate3d(0, 100%, 0)" },
+          to: { opacity: 1, transform: "translate3d(0, 0, 0)" }
+        },
+        fadeOutDown: {
+          from: { opacity: 1 },
+          to: { opacity: 0, transform: "translate3d(0, 100%, 0)" }
+        }
       }
     },
   },
