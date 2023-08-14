@@ -13,6 +13,7 @@ export default {
       colors: {
         'zeel-green-100': 'rgba(0, 143, 95, 0.12)',
         'zeel-green-200': 'rgba(0, 143, 95, 0.30)',
+        'zeel-green-300': '#26DE81',
         'zeel-green-400' : '#008F5F',
         'zeel-green-600': '#005236',
         'zeel-primary' : '#2D9CDB',
@@ -22,9 +23,11 @@ export default {
         'zeel-warning': '#FFBE0A',
         'zeel-orange-200': '#FFF3E5',
         'zeel-orange-300': '#FFCE99',
+        'zeel-orange-400' : '#FFF2D1',
         'zeel-orange-500' : '#FA8100',
         'zeel-orange-gradient': 'rgba(250, 129, 0, 0.15), rgba(250, 129, 0, 0.06)',
         'zeel-dark-300' : '#8D9AB2',
+        'zeel-dark-400': '#5A6B8C',
         'zeel-dark-500': '#3C475D',
         'zeel-gray-50': 'rgba(212, 212, 212, 1)',
         'zeel-gray-100': 'rgba(34, 34, 34, 0.3)',
@@ -32,6 +35,7 @@ export default {
         'zeel-gray-300' : '#F3F5F6',
         'zeel-gray-400' : '#D3D8E0',
         'zeel-gray-500': '#ECEFF3',
+        
       },
       borderRadius: {
         'zeel-rounded': '10px',

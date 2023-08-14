@@ -1,0 +1,41 @@
+import { Meta , StoryObj } from '@storybook/vue3'
+
+import PriceCard from '../../components/PriceTab/PriceCard.vue' 
+
+const mata = {
+    title: 'Zeelbee/Component/PriceCard',
+    component: PriceCard,
+} satisfies Meta<typeof PriceCard>
+
+export default   mata
+type story = StoryObj<typeof PriceCard>
+
+export const  ZeelbeePriceCardFree: story = {
+    args: {
+        type: 'Free',
+        title:'Free',
+     numbers: '€0/mo' ,
+     
+    }
+
+}
+
+export const  ZeelbeePriceCardPro: story = {
+    args: {
+        type: 'Pro',
+        title:'Pro',
+     numbers: '€29.99/mo' ,
+     showButton:true,
+    }
+
+}
+
+export const  ZeelbeePriceCardBussiness: story = {
+    args: {
+        type: 'Bussiness',
+        title:'Bussiness',
+        numbers: '€199.99/mo' ,
+        showButton:true,
+    }
+
+}
