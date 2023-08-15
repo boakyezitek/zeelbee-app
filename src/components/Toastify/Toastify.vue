@@ -1,5 +1,5 @@
 <template>
-    <div v-if="showToast" class="fixed right-[10px] z-40 w-[425px] min-h-[78px] rounded-zeel-rounded-extra-lg border-2 flex gap-4 items-center px-[22px] py-[20px]"
+    <div class="fixed right-[10px] z-40 w-[425px] min-h-[78px] rounded-zeel-rounded-extra-lg border-2 flex gap-4 items-center px-[22px] py-[20px] transition-all"
         :class="cardClasses">
         <div class=" absolute right-[6px] top-[7px] cursor-pointer">
             <span class="material-symbols-outlined text-zeel-text-meduim">
@@ -30,7 +30,7 @@ const props = defineProps<{
 
 const cardClasses = computed(() => [
     props.type === 'info' ? 'border-zeel-info' : props.type === 'success' ? 'border-zeel-green-400' :
-    props.type === 'warning'? 'border-zeel-warning' : 'border-zeel-danger', props.showToast ? 'animate-fade-in-right' : 'animate-fade-out-right'
+    props.type === 'warning'? 'border-zeel-warning' : 'border-zeel-danger', props.showToast ? 'animate-fade-in-right visible' : 'invisible animate-fade-out-right'
 ])
 
 const iconClasses = computed(() => [props.type === 'info' ? 'bg-zeel-info' : props.type === 'success' ? 'bg-zeel-green-400' :
