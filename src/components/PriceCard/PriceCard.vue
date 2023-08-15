@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[333px] min-h-[660px] bg-zeel-orange-400 shadow-xl shadow-slate-200 flex flex-col rounded-zeel-rounded-lg">
+  <div class="min-w-[333px] min-h-[660px] bg-zeel-orange-400 shadow-xl shadow-slate-200 flex flex-col rounded-zeel-rounded-lg">
     <div class="h-[33%] px-9 py-6 flex items-center flex-col">
       <h1 :style="styles" class="text-zeel-warning uppercase font-[500] font-zeel-default text-[20px] mb-3">
         {{ title }}
@@ -9,7 +9,7 @@
         period
       </p>
       <h2 class="text-[30px] font-zeel-regular text-zeel-warning font-bold">
-        {{ numbers }} <span class="text-[17px]">/mo</span>
+        {{ numbers }}<span class="text-[17px]">/mo</span>
       </h2>
     </div>
     <div class="px-10 py-6 bg-white rounded-b-zeel-rounded-lg rounded-t-zeel-rounded-lg">
