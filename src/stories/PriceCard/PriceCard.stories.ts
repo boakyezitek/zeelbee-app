@@ -15,7 +15,7 @@ export const  ZeelbeePriceCardFree: story = {
     args: {
         type: 'Free',
         title:'Free',
-     numbers: '€0/mo' ,
+     numbers: '€0' ,
      
     }
 
