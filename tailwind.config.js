@@ -26,7 +26,6 @@ export default {
         'zeel-orange-300': '#FFCE99',
         'zeel-orange-500': '#FA8100',
         'zeel-orange-gradient': 'rgba(250, 129, 0, 0.15), rgba(250, 129, 0, 0.06)',
-        'zeel-dark-300': '#8D9AB2',
         'zeel-orange-400' : '#FFF2D1',
         'zeel-orange-500' : '#FA8100',
         'zeel-orange-gradient': 'rgba(250, 129, 0, 0.15), rgba(250, 129, 0, 0.06)',

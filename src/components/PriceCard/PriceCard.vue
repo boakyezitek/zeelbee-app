@@ -31,14 +31,14 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import Button from "../Button/Button.vue";
-
+interface PriceItems { id: number; icon: string; text: string };
 const props = withDefaults(
   defineProps<{
     type: "Free" | "Pro" | "Bussiness";
     showButton: Boolean,
     title: string;
     numbers: string;
-    items: [{ id: number; icon: string; text: string }];
+    items: Array<PriceItems>;
   }>(),
   {
     type: "Free",

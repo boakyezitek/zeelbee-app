@@ -1,7 +1,7 @@
 <template>
-    <div class="fixed right-[10px] z-40 w-[425px] min-h-[78px] rounded-zeel-rounded-extra-lg border-2 flex gap-4 items-center px-[22px] py-[20px] transition-all"
+    <div id="toastify" class="fixed right-[10px] z-40 w-[425px] min-h-[78px] rounded-zeel-rounded-extra-lg border-2 flex gap-4 items-center px-[22px] py-[20px] transition-all"
         :class="cardClasses">
-        <div class=" absolute right-[6px] top-[7px] cursor-pointer">
+        <div class=" absolute right-[6px] top-[7px] cursor-pointer" @click="handleHideToastify">
             <span class="material-symbols-outlined text-zeel-text-meduim">
                 close
             </span>
@@ -42,6 +42,16 @@ props.type === 'warning'? 'bg-zeel-warning' : 'bg-zeel-danger'
 //       hideToastClass.value = 'animate-fade-out-right'
 //     }, 800)
 // })
-// </script>
+// 
+const handleHideToastify = () => {
+    let element = document.getElementById('toastify');
+    let classes = element?.classList 
+    classes?.remove('visible');
+    classes?.remove('animate-fade-in-right');
+    classes?.add('invisible');
+    classes?.add('animate-fade-out-right');
+} 
+</script>
+
 
 <style scoped></style>
