@@ -25,7 +25,7 @@ export const ZeelbeeToastifySuccess:Story = {
         type: 'success',
         title:"Yay! Everything worked!",
         message: "Everything is up and runnig. You’re good to go.",
-        showToast: true,
+        showToast: false,
     }
 }
 export const ZeelbeeToastifyWarning:Story = {
@@ -33,7 +33,7 @@ export const ZeelbeeToastifyWarning:Story = {
         type: 'warning',
         title:"Uh oh, Something went wrong",
         message: "Sorry! There was a problem with your request.",
-        showToast: true,
+        showToast: false,
     }
 }
 
@@ -42,6 +42,6 @@ export const ZeelbeeToastifyDanger:Story = {
         type: 'danger',
         title:"Uh oh, Something went wrong",
         message: "Sorry! There was a problem with your request.",
-        showToast: true,
+        showToast: false,
     }
 }
