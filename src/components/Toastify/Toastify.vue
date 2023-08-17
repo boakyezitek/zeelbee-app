@@ -19,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, onUpdated } from 'vue';
 const props = defineProps<{
     type: 'success' | 'info' | 'warning' | 'danger',
     title: string,
@@ -37,11 +37,11 @@ const iconClasses = computed(() => [props.type === 'info' ? 'bg-zeel-info' : pro
 props.type === 'warning'? 'bg-zeel-warning' : 'bg-zeel-danger'
 ])
 
-// onUpdated(() => {
-//     setTimeout(() => {
-//       hideToastClass.value = 'animate-fade-out-right'
-//     }, 800)
-// })
+onUpdated(() => {
+    setTimeout(() => {
+        handleHideToastify()
+    }, 5000)
+})
 // 
 const handleHideToastify = () => {
     let element = document.getElementById('toastify');
