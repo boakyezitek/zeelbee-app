@@ -5,7 +5,7 @@ import PriceCard from '../../components/PriceCard/PriceCard.vue'
 const mata = {
     title: 'Zeelbee/Component/PriceCard',
     component: PriceCard,
-    decorators: [() => ({template: '<div style=" width: 333px; "><story></div>'}) ],
+    decorators: [() => ({template: '<div style=" width: 330px"><story/></div>'}) ],
 } satisfies Meta<typeof PriceCard>
 
 export default   mata
