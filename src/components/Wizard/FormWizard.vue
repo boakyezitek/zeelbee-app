@@ -70,13 +70,7 @@ done
         <h1 class="text-[50px]">Product Gallery</h1>
       </div>
 
-      <Button
-        color="#ffffff"
-        label="Next"
-        background="bg-zeel-green-400"
-        class="next-button"
-        @click="handleTabNext"
-      />
+      <Button color="#ffffff" label="Next" background="bg-zeel-green-400" class="next-button" @click="handleTabNext" />
     </div>
   </div>
 </template>
@@ -93,34 +87,31 @@ function loadTabView() {
   const tabIndicator = document.getElementById(
     "tabIndicator"
   ) as HTMLElement | null;
-  const tabLine: NodeListOf<Element> = document.querySelectorAll(".tab-line");
+
 
   let html = "";
   for (const [index, element] of tabContent.entries()) {
     const title = element.getAttribute("data-title");
     html += `
-       <div class="flex flex-col gap-3 flex-[1]">
+       <div class="flex flex-col gap-3  ${index === tabContent.length - 1 ? '' : 'flex-[1]'}">
             
               <div class="flex items-center gap-3">
                 <div class="w-[60px] h-[60px]  border-zeel-gray-350 border-2 border-solid rounded-[100%] flex items-center justify-center">
-                    <div id="wizard-view" class="w-[43px] h-[42px] ${
-                      currentTab.value === index
-                        ? "bg-zeel-green-400"
-                        : "bg-zeel-gray-350"
-                    }  rounded-[100%] flex items-center justify-center">
-                        <h4 class="text-[16px] ${
-                          currentTab.value === index
-                            ? "text-zeel-warning"
-                            : "text-zeel-dark-350"
-                        }  font-semibold font-zeel-regular">${index + 1}</h4>
+                    <div id="wizard-view" class="w-[43px] h-[42px] ${currentTab.value === index
+        ? "bg-zeel-green-400"
+        : "bg-zeel-gray-350"
+      }  rounded-[100%] flex items-center justify-center">
+                        <h4 class="text-[16px] ${currentTab.value === index
+        ? "text-zeel-warning"
+        : "text-zeel-dark-350"
+      }  font-semibold font-zeel-regular">${index + 1}</h4>
                     </div>
                 </div>
-                <div class="tab-line h-[2px] bg-zeel-gray-350 flex-[1]"></div>
+                <div class="tab-line h-[2px] bg-zeel-gray-350 ${index === tabContent.length - 1 ? '' : 'flex-[1]'} "></div>
             </div>
            
-            <h4 class="text-zeel-dark-380 text-zeel-text-extra-small font-zeel-regular">STEP ${
-              index + 1
-            }</h4>
+            <h4 class="text-zeel-dark-380 text-zeel-text-extra-small font-zeel-regular">STEP ${index + 1
+      }</h4>
             <h2 class="text-zeel-dark-500 text-zeel-text-small font-zeel-regular font-semibold">${title}</h2>
         </div>
        `;
@@ -130,12 +121,20 @@ function loadTabView() {
       element.classList.add("hidden");
     }
 
-    
+
   }
 
   if (tabIndicator) {
     tabIndicator.innerHTML = html;
   }
+
+
+  const tabLine: NodeListOf<Element> = document.querySelectorAll(".tab-line");
+  const lastCard = tabLine[tabLine.length - 1];
+
+  lastCard.classList.add('hidden');
+  lastCard.classList.remove('flex-[1]');
+  console.log('...last card', lastCard)
 }
 
 function handleTabNext() {
@@ -178,12 +177,12 @@ done
 
   for (const [index, element] of tabLine.entries()) {
     if (index < currentTab.value) {
-       
-        if(element.classList.contains("bg-zeel-gray-350")) {
-            element.classList.remove("bg-zeel-gray-350");
-            element.classList.add("bg-zeel-green-400");
-        }
-        
+
+      if (element.classList.contains("bg-zeel-gray-350")) {
+        element.classList.remove("bg-zeel-gray-350");
+        element.classList.add("bg-zeel-green-400");
+      }
+
     }
   }
 
