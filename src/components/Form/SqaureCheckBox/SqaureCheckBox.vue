@@ -18,7 +18,7 @@ const emit = defineEmits<{
 </script>
 
 
-<style>
+<style scoped>
 .round {
   position: relative;
 }
