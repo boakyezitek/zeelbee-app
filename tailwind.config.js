@@ -39,7 +39,8 @@ export default {
         'zeel-gray-350': 'rgba(230, 233, 237, 1)',
         'zeel-gray-400': '#D3D8E0',
         'zeel-gray-500': '#ECEFF3',
-        
+        'zeel-shadow-500': 'rgba(60, 71, 93, 0.20)',
+        'zeel-clip-700': 'rgba(255, 255, 255, 0.80)',
       },
       borderRadius: {
         'zeel-rounded': '10px',
