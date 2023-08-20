@@ -8,25 +8,25 @@
 import { computed } from "vue";
 const props = withDefaults(
     defineProps<{
-       type: "Primary"  | "Secondry" |"Warning" | "Danger",
+       type: "primary"  | "secondry" |"warning" | "danger" | "success",
        title: string
     }>(),
     {
-        type: "Primary",
-        title: "Primary"
+        type: "primary",
+        title: "primary"
     }
 )
 
 
 const styles = computed(() => ({
-  background: props.type ===  "Primary" ? "#f3f6ff" : props.type === "Secondry" ? "#E1E4EA"  : props.type === "Warning" ? "#Fdf4f4" : props.type === "Danger" ? "#fdf4f4" : `${props.type}`,
-  border: props.type === "Primary" ? " 1px solid" : props.type === "Secondry" ? " 1px solid" : props.type === "Warning" ? " 1px solid" : props.type === "Danger" ? " 1px solid" : `${props.type}`,
-  borderColor: props.type === "Primary" ? "#3366ff" :  props.type === "Warning"  ? "#ffb020"  :   props.type === "Danger" ? "red" :`${props.type}`,
+  background: props.type ===  "primary" ? "#f3f6ff" : props.type === "secondry" ? "#F3F4F7"  : props.type === "warning" ? "#Fdf4f4" : props.type === "danger" ? "#fdf4f4" : props.type === "success" ? "#f1f7f5" : `${props.type}`,
+  border: props.type === "primary" ? " 1px solid" : props.type === "secondry" ? " 1px solid" : props.type === "warning" ? " 1px solid" : props.type === "danger" ? " 1px solid" : props.type === "success" ? "1px solid" : `${props.type}`,
+  borderColor: props.type === "primary" ? "#3366ff" :  props.type === "warning"  ? "#ffb020"  :   props.type === "danger" ? "red" :  props.type === "secondry" ? "#C4CAD6"  : props.type === "success" ? "#5bbc99" : `${props.type}`,
 }))
 
 
 const myColor = computed(() => ({
-  color: props.type === "Primary" ? '#3366ff' :  props.type === "Warning" ? '#b99759' :   props.type === "Danger" ? "red" : `${props.type}`
+  color: props.type === "primary" ? '#3366ff' :  props.type === "warning" ? '#b99759' :   props.type === "danger" ? "red" :  props.type === "secondry" ? "#C3C9D5" : props.type === "success" ? "#38745f" : `${props.type}`
 
 }))
 
