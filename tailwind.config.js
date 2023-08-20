@@ -26,6 +26,8 @@ export default {
         'zeel-orange-500': '#FA8100',
         'zeel-orange-gradient': 'rgba(250, 129, 0, 0.15), rgba(250, 129, 0, 0.06)',
         'zeel-orange-400' : '#FFF2D1',
+        'zeel-dark-100' : '#7384A5',
+        'zeel-dark-200' : '#92A0B9',
         'zeel-dark-300' : '#8D9AB2',
         'zeel-dark-350' : '#8E9BB3',
         'zeel-dark-380' : '#7989A8',
@@ -51,6 +53,7 @@ export default {
         'zeel-text-extra-small': '12px',
         'zeel-text-small': '15px',
         'zeel-text-meduim': '18px',
+        'zeel-text-extra-meduim': '20px',
         'zeel-text-large': '24px',
         'zeel-text-extra-large': '42px'
       },
