@@ -1,5 +1,5 @@
 <template>
-  <div class="h-[70px] bg-[#fff] shadow-lg shadow-slate-200 py-[15px] px-[40px]">
+  <div class="h-[70px] bg-[#fff]  py-[15px] px-[40px]">
     <div class="flex items-center justify-between">
       <div class=" h-[40px] w-[440px]  bg-[#F3F4F7] rounded-[8px] py-[12px]  px-[23px]  flex  items-center">
         <div><span class="material-symbols-outlined text-[#C3C9D5] pt-3">search</span></div>
