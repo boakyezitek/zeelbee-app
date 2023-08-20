@@ -15,7 +15,7 @@ export const ZeelbeeGraphCard: Story = {
     args:{
         title: 'Revenue',
         value: 25000,
-        has_balance: true,
+        hasBalance: true,
         balance: 199,
         currency: '$'
     }
@@ -25,7 +25,7 @@ export const ZeelbeeRevenueGraphCard: Story = {
     args:{
         title: 'Revenue',
         value: 25000,
-        has_balance: true,
+        hasBalance: true,
         balance: 199,
         currency: '$'
     }
@@ -35,7 +35,7 @@ export const ZeelbeePurchaseGraphCard: Story = {
     args:{
         title: 'Purchases',
         value: 34,
-        has_balance: false,
+        hasBalance: false,
     }
 }
 
@@ -43,7 +43,7 @@ export const ZeelbeeVisitGraphCard: Story = {
     args:{
         title: 'Visits',
         value: 34,
-        has_balance: false,
+        hasBalance: false,
     }
 }
 
@@ -52,6 +52,6 @@ export const ZeelbeeConversionGraphCard: Story = {
     args:{
         title: 'Conversions',
         value: '45%',
-        has_balance: false,
+        hasBalance: false,
     }
 }
