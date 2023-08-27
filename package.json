@@ -5,8 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "run-p type-check build-only",
     "preview": "vite preview",
+    "test:unit": "vitest",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -23,15 +26,23 @@
     "@storybook/testing-library": "^0.2.0",
     "@storybook/vue3": "^7.3.1",
     "@storybook/vue3-vite": "^7.3.1",
-    "@vitejs/plugin-vue": "^4.2.3",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.27",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.3.1",
     "tailwindcss": "^3.3.3",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.5",
-    "vue-tsc": "^1.8.5"
+    "@tsconfig/node18": "^18.2.0",
+    "@types/jsdom": "^21.1.1",
+    "@types/node": "^18.17.5",
+    "@vitejs/plugin-vue": "^4.3.1",
+    "@vue/test-utils": "^2.4.1",
+    "@vue/tsconfig": "^0.4.0",
+    "jsdom": "^22.1.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "~5.1.6",
+    "vite": "^4.4.9",
+    "vitest": "^0.34.2",
+    "vue-tsc": "^1.8.8"
   }
 }
