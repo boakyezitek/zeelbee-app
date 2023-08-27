@@ -1,14 +1,14 @@
-import { Meta , StoryObj } from '@storybook/vue3'
+import type { Meta , StoryObj } from '@storybook/vue3'
 
 import PriceCard from '../../components/PriceCard/PriceCard.vue' 
 
-const mata = {
+const meta = {
     title: 'Zeelbee/Component/PriceCard',
     component: PriceCard,
     decorators: [() => ({template: '<div style=" width: 330px"><story/></div>'}) ],
 } satisfies Meta<typeof PriceCard>
 
-export default   mata
+export default meta
 type story = StoryObj<typeof PriceCard>
 
 export const  ZeelbeePriceCardFree: story = {
