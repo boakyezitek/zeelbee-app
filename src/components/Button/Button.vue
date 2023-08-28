@@ -1,15 +1,13 @@
 <template>
-    <div>
-        <button class="px-[30px] py-[14px]  rounded-zeel-rounded font-zeel-default flex items-center gap-3" :class="classes" :style="styles">
-            <span class="material-symbols-outlined" v-if="hasIcon && iconPostion === 'left'">
+        <button class="px-[30px] py-[14px]  rounded-zeel-rounded font-zeel-default flex items-center gap-3" :class="classes" :style="styles" data-test="button">
+            <span class="material-symbols-outlined" v-if="hasIcon && iconPosition === 'left'" data-test="icon-left">
             {{ icon }}
            </span>       
             {{label}}
-            <span class="material-symbols-outlined" v-if="hasIcon && iconPostion === 'right'">
+            <span class="material-symbols-outlined" v-if="hasIcon && iconPosition === 'right'" data-test="icon-right">
             {{ icon }}
            </span>
         </button>
-    </div>
 </template>
 
 <script setup lang="ts">
