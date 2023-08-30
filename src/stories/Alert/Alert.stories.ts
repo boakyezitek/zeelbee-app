@@ -14,15 +14,16 @@ type story = StoryObj<typeof Alert>
 export const ZeelbeeAlertPrimary: story = {
     args: {
      type:  "primary",
-     title: "primary" 
+     title: "primary" ,
+     background: "#f3f6ff"
     }
 }
 
 export const ZeelbeeAlertSuccess: story = {
     args: {
         type: "success",
-     title: "success" 
-
+     title: "success" ,
+     background: "#f1f7f5"
 
     }
 }
@@ -31,7 +32,8 @@ export const ZeelbeeAlertSuccess: story = {
 export const ZeelbeeAlertSecondry: story = {
     args: {
         type: "secondry",
-     title: "secondry" 
+     title: "secondry" ,
+     background: "#F3F4F7"
         
     }
 }
@@ -39,7 +41,8 @@ export const ZeelbeeAlertSecondry: story = {
 export const ZeelbeeAlertWarning: story = {
     args: {
     type: "warning",
-    title: "warning" 
+    title: "warning" ,
+    background: "#Fdf4f4"
 
     }
 }
@@ -49,7 +52,8 @@ export const ZeelbeeAlertWarning: story = {
 export const ZeelbeeAlertDanger: story = {
     args: {
         type: "danger",
-     title: "danger" 
+     title: "danger" ,
+     background: "#Fdf4f4"
 
 
     }
