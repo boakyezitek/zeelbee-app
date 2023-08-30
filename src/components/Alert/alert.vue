@@ -10,10 +10,12 @@ const props = withDefaults(
     defineProps<{
        type: "primary"  | "secondry" |"warning" | "danger" | "success",
        title: string
+       background: string;
     }>(),
     {
         type: "primary",
-        title: "primary"
+        title: "primary",
+        // background: "#f3f6ff"
     }
 )
 
