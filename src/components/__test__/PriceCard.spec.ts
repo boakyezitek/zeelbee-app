@@ -9,6 +9,20 @@ describe("PriceCard.Vue", () => {
     expect(wrapper.exists()).toBe(true);
   });
 
+   it("div element should hide when props showButton is not set to true", () => {
+      const divElement = wrapper.find('[data-test="show-button"]')
+      expect(divElement.exists()).toBe(false)
+   })
+
+   it("div element should show when props showButton is not set to false", async() => {
+    await wrapper.setProps({showButton: true})
+    const divElement = wrapper.find('[data-test="show-button"]')
+    expect(divElement.exists()).toBe(true)
+   })
+
+
+
+
   //   free props exist
   it("Free props type exits", async () => {
      await wrapper.setProps({type: "Free",})
