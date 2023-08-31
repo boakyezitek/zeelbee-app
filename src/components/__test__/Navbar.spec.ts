@@ -7,7 +7,7 @@ describe("Navbar.Vue", () => {
   const wrapper = mount(NavBar)
 
   it("div element should hide when props hasIcon is not set to true", () => {
-  const divElement = wrapper.find('div')
+  const divElement = wrapper.find('[data-test="is-active"]')
   expect(divElement.exists()).toBe(true)
   })
 
