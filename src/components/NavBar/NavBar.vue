@@ -23,7 +23,7 @@
 
         <div class=" group/notifyca flex  items-center relative  justify-center ml-[31px] w-[17px] h-[20px]">
         <span class="material-symbols-outlined cursor-pointer ">notifications</span>
-              <div v-if="isActive" class=" w-[10px]  h-[10px] right-[-1px] rounded-full bg-[#FA8100] absolute top-[-5px] "></div>
+              <div v-if="isActive" class=" w-[10px]  h-[10px] right-[-1px] rounded-full bg-[#FA8100] absolute top-[-5px]  " data-test="is-active" ></div>
               <div class=" absolute  top-0  z-[9999]  invisible animate-fade-out-down transition-all duration-300 ease-in-out group-hover/notifyca:visible  group-hover/notifyca:animate-fade-in-up ">
                 <div class=" w-[416px] h-[443px] bg-white shadow-xl shadow-slate-200  mt-[55px] flex  flex-col ">
                 <div class=" h-[16%] border border-b-2 border-solid  border-b-zeel-gray-200 p-[30px] flex items-center justify-between"> 
