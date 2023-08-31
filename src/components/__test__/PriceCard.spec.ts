@@ -55,7 +55,7 @@ it("Pro props numbers exits", async () => {
 
 //  Business props exist\
 it("Business props numbers exits", async() => {
-await  wrapper.setProps({title:"Bussiness"})
+await  wrapper.setProps({title:"Bussiness"}) 
 expect(wrapper.vm.title).toBe("Bussiness")
 })
 
