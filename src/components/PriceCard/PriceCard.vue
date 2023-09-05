@@ -21,7 +21,7 @@
           {{ text }}
         </h1>
       </div>
-      <div class="flex items-center justify-center pt-[62px]" v-if="showButton">
+      <div class="flex items-center justify-center pt-[62px]" v-if="showButton"  data-test="show-button">
         <Button  color="#ffffff" label="Get Started" background="bg-zeel-green-400" />
       </div>
     </div>

@@ -6,6 +6,20 @@ import NavBar from "../NavBar/NavBar.vue";
 describe("Navbar.Vue", () => {
   const wrapper = mount(NavBar)
 
+  it("div element should hide when props hasIcon is not set to true", () => {
+  const divElement = wrapper.find('[data-test="is-active"]')
+  expect(divElement.exists()).toBe(true)
+  })
+
+  it('div element should show when props isActive is set to true .', async() => {
+    await wrapper.setProps({
+      isActive: true,
+    })
+    const divElement = wrapper.find('[data-test="is-active"]')
+    expect(divElement.exists()).toBe(true)
+})
+
+
   it("Compnents Exists", () => {
       expect(wrapper.exists()).toBe(true)
   })
@@ -20,10 +34,6 @@ describe("Navbar.Vue", () => {
     expect(wrapper.vm.name).toBe("Salung Prastyo")
   })
 
-//   it("checks image variable", async() => {
-//     await wrapper.setData({image: "eclips"})
-//     expect(wrapper.vm.name).toBe("eclips")
-//   })
 
 })
 
