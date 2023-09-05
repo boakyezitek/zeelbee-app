@@ -8,7 +8,7 @@ const meta = {
     tags: ['autodocs'],
 }satisfies Meta<typeof Alert>
 
-export default  meta
+export default meta
 type story = StoryObj<typeof Alert>
 
 export const ZeelbeeAlertPrimary: story = {

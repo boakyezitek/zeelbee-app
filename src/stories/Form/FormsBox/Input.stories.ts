@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from "@storybook/vue3";
+import type { Meta, StoryObj } from "@storybook/vue3";
 
 import Input from '../../../components/Form/FormsBox/Input.vue'
 
@@ -8,7 +8,7 @@ const meta = {
     tags: ['autodocs']
 }satisfies Meta<typeof Input>
 
-export default  meta;
+export default meta;
 
 type Story = StoryObj<typeof Input>
 
