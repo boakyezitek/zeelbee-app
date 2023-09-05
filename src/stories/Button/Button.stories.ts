@@ -19,7 +19,7 @@ export const ButtonPrimary: Story = {
         background: 'bg-zeel-primary',
         hasIcon: true,
         icon: 'add',
-        iconPostion: 'left',
+        iconPosition: 'left',
       },
 }
 
@@ -30,7 +30,7 @@ export const ButtonSecondary: Story = {
         background: 'bg-zeel-secondary',
         hasIcon: true,
         icon: 'skip_next',
-        iconPostion: 'right',
+        iconPosition: 'right',
     }
 }
 
@@ -41,7 +41,7 @@ export const ButtonSuccess: Story = {
         background: 'bg-zeel-green-400',
         hasIcon: true,
         icon: 'check_circle',
-        iconPostion: 'left',
+        iconPosition: 'left',
     }
 }
 
@@ -52,6 +52,6 @@ export const ButtonDanger: Story = {
         background: 'bg-zeel-danger',
         hasIcon: true,
         icon: 'delete',
-        iconPostion: 'left',
+        iconPosition: 'left',
     }
 }

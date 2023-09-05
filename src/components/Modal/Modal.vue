@@ -1,18 +1,18 @@
 <template>
     <Teleport to="body">
-        <div v-if="showModal" class="fixed left-0 top-0 right-0 bottom-0 bg-zeel-gray-100 flex items-center justify-center p-5 z-50">
-            <div class="h-[450px] max-h-[750px] animate-fade-in-up" :style="styles">
-                <Card v-bind="{}">
+        <div v-if="isModalShow" class="fixed left-0 top-0 right-0 bottom-0 bg-zeel-gray-100 flex items-center justify-center p-5 z-50" data-test="modal-container">
+            <div class="h-[450px] max-h-[750px] animate-fade-in-up" :style="styles" data-test="modal-body">
+                <Card data-test="modal-card">
                 <template #body>
-                    <div class="flex flex-col items-start h-full">
-                        <div class="flex items-center justify-between w-full">
-                            <h1 class="capitalize text-zeel-text-meduim font-zeel-regular font-semibold text-zeel-dark-500">{{ title }}</h1>
-                            <span class="material-symbols-outlined cursor-pointer text-zeel-gray-50 hover:text-zeel-danger" @click="$emit('hide')">
+                    <div class="flex flex-col items-start h-full" data-test="modal-body-content-box">
+                        <div class="flex items-center justify-between w-full" data-test="modal-heading-box">
+                            <h1 class="capitalize text-zeel-text-meduim font-zeel-regular font-semibold text-zeel-dark-500" data-test="modal-title">{{ title }}</h1>
+                            <span class="material-symbols-outlined cursor-pointer text-zeel-gray-50 hover:text-zeel-danger" @click="$emit('hide')" data-test="modal-close-icon">
 close
 </span>
                         </div>
 
-                        <div class="flex-1 overflow-x-hidden overflow-y-auto pt-8">
+                        <div class="flex-1 overflow-x-hidden overflow-y-auto pt-8" data-test="modal-body-content">
                             Hello this is modal
                         </div>
                     </div>
@@ -35,7 +35,7 @@ defineEmits<{
 const props = withDefaults(defineProps<{
     type: 'small' | 'meduim' | 'large' | number, 
     title: string,
-    isModalShow?: boolean,
+    isModalShow: boolean,
 }>(), {
     type: 'meduim',
     title: 'Withdrawal Form',
@@ -47,11 +47,11 @@ const styles = computed(() => ({
 }))
 
 
-const showModal = ref(props.isModalShow);
+// const showModal = ref(props.isModalShow);
 
-watch(() => props.isModalShow, (newValue) => {
-  showModal.value = newValue;
-});
+// watch(() => props.isModalShow, (newValue) => {
+//   showModal.value = newValue;
+// });
 </script>
 
 <style scoped></style>
